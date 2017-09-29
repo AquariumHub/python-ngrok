@@ -20,29 +20,11 @@ bufsize = 1024 # 吞吐量
 Tunnels = list() # 全局渠道赋值
 body = dict()
 body['protocol'] = 'http'
-body['hostname'] = 'www.xxx.com'
-body['subdomain'] = ''
+body['hostname'] = ''
+body['subdomain'] = 'aquarium-hub'
 body['rport'] = 0
 body['lhost'] = '127.0.0.1'
-body['lport'] = 80
-Tunnels.append(body) # 加入渠道队列
-
-body = dict()
-body['protocol'] = 'http'
-body['hostname'] = ''
-body['subdomain'] = 'xxx'
-body['rport'] = 0
-body['lhost'] = '127.0.0.1'
-body['lport'] = 80
-Tunnels.append(body) # 加入渠道队列
-
-body = dict()
-body['protocol'] = 'tcp'
-body['hostname'] = ''
-body['subdomain'] = ''
-body['rport'] = 55499
-body['lhost'] = '127.0.0.1'
-body['lport'] = 22
+body['lport'] = 8080
 Tunnels.append(body) # 加入渠道队列
 
 # 读取配置文件
